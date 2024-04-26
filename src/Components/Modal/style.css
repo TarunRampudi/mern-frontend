@@ -1,0 +1,19 @@
+
+
+
+.modal_inner{
+    overflow-y: auto;
+}
+
+.cancel_div{
+    
+    margin-top: 100%;
+
+}
+
+.cancel_div:hover{
+
+    cursor: pointer;
+    color:#adb5bd !important ;
+
+}

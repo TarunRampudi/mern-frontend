@@ -1,0 +1,20 @@
+.navbar-collapse{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.brand_name{
+    text-shadow: 3px 3px 2px black;
+}
+
+.brand_name::first-letter{
+    text-shadow: 3px 3px 2px darkred;
+    color: yellow;
+    font-family: cursive ,  'Courier New', Courier, monospace;
+
+}
+
+.brand_name:hover{
+    transform: scale(1.3) translateX(15px);
+    transition: transform , 0.15s  ;
+}

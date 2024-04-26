@@ -1,0 +1,174 @@
+
+
+
+.card_main {
+    background-image: linear-gradient(40deg , #00ffee66 , transparent , transparent , transparent , #e5fa0066);
+    border-radius: 35%;
+    padding-bottom: 5vh;
+}
+
+.card_main_dark_mode {
+    background-image: linear-gradient(40deg , #e5fa0066 , transparent , transparent , transparent , #00ffee66);
+    border-radius: 35%;
+    color: white;
+    padding-bottom: 5vh;
+
+}
+
+
+
+
+.card_back_btn {
+    background-color: transparent;
+
+
+    padding: 0.25vh 0.75vh;
+    border-radius: 2vh;
+    background-color: darkblue;
+    color: white;
+    font-weight: bold;
+
+    position: fixed;
+    left: 5px;
+    z-index: 100;
+
+}
+
+
+
+.card_data_div {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    padding: 0 10vh;
+
+    position: relative;
+}
+
+
+.card_data_div>img {
+    height: 70vh;
+    width: 60vw;
+    object-fit: cover;
+    border-radius: 2vh;
+    border: 2px solid white;
+    box-shadow: 10px 10px 10px gray;
+    margin-bottom: 5vh;
+}
+
+.card_data_div>div {
+    border-left: 2px solid cyan;
+    border-radius: 5vh;
+
+    margin: 2vh;
+    padding: 2vh;
+
+    text-align: start;
+    align-self: flex-start;
+}
+
+.card_data_div>div>span {
+    border-bottom: 2px solid cyan;
+    font-weight: bolder;
+}
+
+
+.card_footer_div>div{
+    border: 1px solid ;
+    border-radius: 8vh !important;
+}
+
+
+
+
+/* Copied data ------------> */
+
+
+/* Below is not using now (Image removed) -----------> */
+/* #about_img {
+    height: 25vh;
+    width: 25vh;
+    border-radius: 50%;
+    border: 1px solid skyblue;
+    object-fit: initial;
+    transition: ease-in-out, border-radius 0.5s, transform 0.5s;
+}
+
+
+#about_img:hover {
+    border-top: 4px solid red;
+    border-bottom: 4px solid red;
+    border-radius: 2vh;
+    transform: scale(1.4);
+} */
+
+
+
+.logosInShowMore {
+    margin: 2vh;
+    height: 35px;
+    width: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    transition: ease-in-out transform 0.15s;
+}
+
+.logosInShowMore:hover {
+    transform: scale(1.4) rotate(180deg) ;
+    background-color: yellow;
+}
+
+.logosInShowMore:active {
+    background-color: transparent;
+}
+
+
+
+
+
+
+@media (max-width:772px) {
+
+    .card_main {
+        border-radius: 5vh;
+    }
+    
+    .card_main_dark_mode {
+        border-radius: 5vh;
+    }
+    
+
+    .card_data_div {
+        padding: 0;
+    }
+
+    .card_data_div>img {
+        width: 80vw;
+        height: 65%;
+    }
+
+    .card_data_div>div {
+        padding: 0.5 vh;
+        padding-left: 1vh;
+        border-radius: 2vh;
+        margin: 7vh 0;
+    }
+
+
+    /* Copied data ------------> */
+
+
+    .logosInShowMore {
+        height: 28px;
+        width: 32px;
+        margin: 0.5vh;
+    }
+
+
+}
+
+
+

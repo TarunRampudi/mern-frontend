@@ -1,0 +1,102 @@
+
+
+
+.darkCardHolderAk {
+    width: 80vw;
+    background-image: linear-gradient(120deg, rgb(94, 94, 41), transparent, #212529, transparent, rgb(35, 83, 83));
+    border-radius: 100vh;
+    margin: 5vh 0;
+    padding-bottom: 8vh;
+}
+
+.cardHolderInner {
+    height: 99%;
+    width: 99%;
+}
+.cardAk {
+    padding: 0.1vh;
+    width: 37vh;
+    margin-right: 4vh;
+    margin-top: 4vh;
+    border-radius: 1.5vh;
+    display: inline-block;
+}
+
+.darkCardInnerAk {
+    padding: 1vh;
+    border-radius: 2vh;
+    background-color: #1b1212;
+    color: #fff;
+}
+
+
+
+
+.foodImage {
+    height: 35vh;
+    width: 100%;
+    border-radius: 1vh;
+    object-fit: cover;
+}
+
+
+
+.cardAk:hover .card_name {
+    background-color: #1b1212;
+    transform: translateY(-10px);
+    transition: 0.15s, ease-in-out alternate reverse;
+    font-weight: bold;
+
+
+}
+
+
+.cardAk:hover .card_detail {
+    background-color: #1b1212;
+    transform: translateY(-7px) scaleY(1.3) scaleX(1.025);
+    transition: 0.5s, ease-in-out alternate;
+    font-weight: bold;
+
+
+}
+
+.cardAk:hover .foodImage {
+    transform:  scale(0.99);
+    transition: 0.5s, ease-in-out alternate;
+}
+
+
+
+.card_btn_Ak:hover {
+    transform: translateY(-0.3vh);
+}
+
+
+
+
+@media (max-width:772px) {
+    .cardHolderAk {
+        border-radius: 5vh;
+    }
+
+    .darkCardHolderAk {
+        border-radius: 5vh;
+    }
+}
+
+
+
+@media (max-width:400px) {
+    .cardAk {
+        width: 33vh;
+    }
+}
+
+
+
+
+@media (max-width:315px) {
+    .cardAk {
+        width: 95%;
+    }
+}

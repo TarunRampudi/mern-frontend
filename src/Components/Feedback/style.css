@@ -1,0 +1,324 @@
+
+
+/* Feedback main style (form and about) starts here --> */
+
+
+
+
+.new_feed_container{
+    background-image: linear-gradient(145deg ,cyan ,yellow ,  violet  , yellow , violet , cyan);
+    border: 2px solid red;
+
+}
+
+  
+
+#feed_form{
+    width: 50vh;
+    box-shadow: 20px 30px 30px black;
+}
+
+
+
+#feed_name{
+    width: 25vh;
+    height: 4vh;
+    font-size: 1.2rem;
+    border-radius: 1vh;
+}
+
+
+#feed_radio {
+    padding: 0 5vh;
+    font-weight: bolder;
+}
+
+#feed_msg {
+    resize: none;
+    font-size: 1rem;
+    padding: 1vh;
+    border-radius: 1vh;
+}
+
+
+#feed_submit_btn{
+    width: 15vh;
+    height: 4vh;
+    font-weight: 900;
+    letter-spacing: 4px;
+    background-color: #40ff00;
+    border-radius: 0.5vh;
+}
+
+#feed_submit_btn:hover{
+    border-radius: 2vh;
+    color: yellow;
+    cursor: pointer;
+}
+
+#feed_submit_btn:active{
+    color: white;
+}
+
+#clear_btn{
+    background-color: rgb(202, 39, 39);
+    height: 100%; 
+    /* width: 45px;  */
+    color: white; 
+    border-radius:0.5vh; 
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+#clear_btn:hover{
+    cursor: pointer;
+    color: yellow;
+    border-radius:2vh; 
+}
+
+#clear_btn:active{
+    background-color: cyan;
+}
+
+#progress_feed {
+    height: 5px;
+    width: 100%;
+    border-radius: 2vh;
+    margin: 1vh 0;
+    background-image: linear-gradient(to right, cyan , tomato);
+    visibility: hidden;
+    animation: progressForLoadData 0.3s infinite alternate-reverse ease-in-out;
+}
+
+
+
+/* About Me css -------------> (Starts) */
+
+.aboutMeAk{
+    box-shadow: -20px 30px 30px black;
+}
+
+
+#about_img {
+    height: 25vh;
+    width: 25vh;
+    border-radius: 50%;
+    border: 1px solid skyblue;
+    object-fit: initial;
+    transition: ease-in-out , border-radius  0.5s , transform 0.5s;
+}
+
+
+#about_img:hover{
+    border-top: 4px solid red;
+    border-bottom: 4px solid red;
+    border-radius: 2vh;
+    transform: scale(1.4);
+}
+
+
+
+.logos {
+    margin: 2vh;
+    height: 35px;
+    width: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    transition: ease-in-out  transform 0.15s;
+}
+
+.logos:hover{
+    background-color: yellow;
+    transform: scale(1.4) rotate(180deg);
+}
+
+.logos:active{
+    background-color: transparent;
+}
+
+/* About Me css -------------> (Ends) */
+
+
+
+
+/* Feedback main style Ends here --> */
+
+
+
+
+/* Show all feed with btn and all feeds (starts) */
+
+.show_all_feeds_topmost_div{
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10vh 0vh;
+
+    width: 100%;
+}
+
+
+.show_All_FeedBack_main{
+    background-color: #e6d3ed;
+
+    width: 75%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    padding: 2vh;
+    margin-bottom: 2vh;
+
+    border-top: 2px solid blue;
+    border-bottom: 2px solid blue;
+    border-radius: 5vh; 
+
+    box-shadow: -20px -10px 30px black;
+    
+}
+
+.show_All_FeedBack_main > h1{
+    font-size: 0.8rem;
+    color: red;
+}
+
+#show_all_feed_btn{
+    font-size: 1.4rem;  
+    border-radius: 1vh;
+    font-weight: 600;
+    color: white;
+    background-color: black;
+}
+
+#show_all_feed_btn:hover{
+    color: yellow;
+    border-radius: 5vh;
+    cursor: pointer;
+}
+
+#show_all_feed_btn:active{
+    background-color: yellow;
+    color: red;
+}
+
+
+#process_all_feeds{
+    height: 5px;
+    width: 100%;
+    border-radius: 2vh;
+    margin: 1vh 0;
+    background-image: linear-gradient(to right, tomato,blue);
+    visibility: hidden;
+    animation: progressForLoadData 0.5s infinite alternate-reverse ease-in-out;
+}
+
+#all_feedback{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+/* Show all feed with btn and all feeds (End) */
+
+
+
+
+/* Below is used in user feedback result (Start) */
+.user_feeds_are{
+
+    color: black;
+    height: auto;
+    width: 40vh;
+    background-color: rgba(96, 253, 214, 0.292);
+    border-left: 4px solid red;
+    border-right: 4px solid red;
+    margin: 2vh 1vh;
+    padding: 1vh;
+    font-size: 1.1rem;
+    border-radius: 2vh;
+
+}
+
+.user_feeds_are:hover{
+    transform: scale(1.1);
+    border-top:1px solid red ;
+    border-bottom:1px solid red ;
+    background-image: linear-gradient(260deg , rgba(96, 253, 214, 0.292) , transparent, rgb(54, 174, 253));
+}
+
+
+.user_feeds_are > h3{
+    color: black;
+}
+
+
+
+/* Below is used in user feedback result (Ends) */
+
+
+
+
+/* KeyFrame -----> */
+@media (max-width : 767px) {
+    
+    .feed_body > div{
+        padding-left: 8vh;
+    }   
+
+    #feed_form{
+        width: 45vh;
+    }
+
+    .aboutMeAk{
+        width: 35vh;
+    }
+
+    .aboutMeMyName{
+        font-size: 1.5rem;
+    }
+
+    .aboutMeText{
+        font-size: 0.8rem;
+    }
+    
+    #about_img{
+        height: 20vh;
+        width: 20vh;
+    }
+
+    .logos{
+        height: 28px;
+        width: 32px;
+        margin: 0.5vh;
+    }
+
+
+
+    .show_All_FeedBack_main{
+        width: 90vw;
+    }
+
+}
+
+
+
+
+
+
+
+
+/* Animation used is loading */
+
+@keyframes progressForLoadData {
+
+    0% {
+        width: 10%;
+    }
+    100% {
+        width: 70%;
+    }
+
+}
